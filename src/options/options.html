@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options Page - 🧩NFSFU234FormValidation Extension</title>
+    <link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+    <div class="options-container">
+        <div class="sidebar">
+            <a href="#top"><img src="./images/Banner.png" alt="Extension Logo" class="logo"></a>
+            <ul>
+                <li class="active"><a href="#startup"><span class="icon">🚀</span> Initialize on Startup</a></li>
+                <li><a href="#version"><span class="icon">📦</span> NFSFU234FormValidation Library Version</a></li>
+                <li><a href="#theme"><span class="icon">🎨</span> Theme</a></li>
+                <li><a href="#custom-messages"><span class="icon">💬</span> Custom Messages</a></li>
+                <li><a href="#faq"><span class="icon">❓</span> FAQs</a></li>
+                <li><a href="#docs"><span class="icon">📄</span> Documentation</a></li>
+                <li><a href="#docs"><span class="icon">🧩</span> NFSFU234FormValidation Extension</a></li>
+                <!-- Add more options here -->
+            </ul>
+        </div>
+        <div class="options-content">
+
+            <section style="border: 1px solid #1D1C1C;background: #1D1C1C;color: white;padding: 0 1rem ;margin-top: 0px;" id="top">
+                <h2><span class="icon">⚙️</span> My Settings</h2>
+            </section>
+
+            <section id="startup">
+                <h2><span class="icon">🚀</span> Initialize on Startup</h2>
+                <label for="initializeStartupCheckbox">
+                    <input type="checkbox" id="initializeStartupCheckbox"> Initialize Extension on Startup
+                </label>
+            </section>
+            <section id="version">
+                <h2><span class="icon">📦</span> NFSFU234FormValidation Library Version</h2>
+                <input id="versionSelect" placeholder="@latest" readonly>
+            </section>
+            <section id="theme">
+                <h2><span class="icon">🎨</span> Theme</h2>
+                <select id="themeSelect"></select>
+                <!-- Add theme options here -->
+            </section>
+            <section id="custom-messages">
+                <h2><span class="icon">💬</span> Custom Messages</h2>
+                <!-- Add input fields for custom messages here -->
+            </section>
+
+            <section>
+                <button id="saveButton" class="save-button">Save Changes</button>
+            </section>
+
+            <section id="faq">
+                <h2><span class="icon">❓</span> FAQs</h2>
+                <div class="faq-item">
+                    <h3>Does the extension collect my data?</h3>
+                    <p>This extension does not collect data unless explicitly required and with user permission.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Who made this extension?</h3>
+                    <p>This extension is powered by the NFSFU234FormValidation Library, created by NFORSHIFU234 Dev || Shifu-Nfor Nyuiring-yoh.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I provide feedback or report issues?</h3>
+                    <p>You can provide feedback or report issues through social icons and a feedback button on the extension popup. Additionally, you can also provide feedback or report issues on our GitHub organization account or repository.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is this extension about?</h3>
+                    <p>This extension is a form validation library designed for developers to test and preview NFSFU234FormValidation Library functionalities before implementation. It provides developers with a convenient way to assess the validation process without integrating it directly into their codebase.</p>
+                </div>
+                <!-- <div class="faq-item">
+                    <h3>Can the extension work on all websites?</h3>
+                    <p>The extension is designed to work on most websites. However, compatibility may vary depending on the website's existing validation methods and scripts. It is recommended for developers to use the extension as a preview tool and to test its functionality on their specific websites.</p>
+                </div> -->
+                <div class="faq-item">
+                    <h3>Can the extension work on all websites?</h3>
+                    <p>The extension is designed to work on most websites. However, compatibility may vary depending on the website's existing validation methods and scripts. It is recommended for developers to use the extension as a preview tool and to test its functionality on their specific websites.</p>
+                    <p>Additionally, users can implement the library in their applications by including it via CDN. To do so, you can visit the <a href="https://github.com/NFSFU234FormValidation/nfsfu234-form-validation/?tab=readme-ov-file#%EF%B8%8F-installation">GitHub repository</a> of the library for specific guide.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Are validation rules and themes customizable?</h3>
+                    <p>Validation rules and themes are currently in development and will be available soon. For now, the extension utilizes default validation settings.</p>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </section>
+            
+            
+            <section id="docs">
+                <h2><span class="icon">📄</span> Documentation</h2>
+                <p>Visit our website for detailed documentation:</p>
+                <a href="https://github.com/NFSFU234FormValidation/nfsfu234formValidation-web-extension/#README" target="_blank">Extension Documentation</a>
+                <p>Check out our GitHub repository for more information:</p>
+                <a href="https://github.com/NFSFU234FormValidation/nfsfu234formValidation-web-extension/" target="_blank">Extension GitHub Repository</a>
+                <p>For information about the NFSFU234FormValidation Library, please refer to its documentation:</p>
+                <a href="https://nfsfu234-form-validation.netlify.app/" target="_blank">Library Documentation</a>
+                <p>Explore the library's GitHub repository:</p>
+                <a href="https://github.com/NFSFU234FormValidation/nfsfu234-form-validation/" target="_blank">Library GitHub Repository</a>
+            </section>
+            
+            <!-- Add more sections here -->
+
+            
+
+            <footer class="footer" id="footer">
+                <p class="legal-info">&copy; <span id="year"></span> <a href="https://github.com/NFSFU234FormValidation/" target="_blank" rel="noopener noreferrer">NFSFU234FormValidation</a>. All rights reserved.</p>
+                <p class="version">@v<span class="extensionVersion">latest</span></p>
+            </footer>
+
+        </div>
+    </div>
+    <script src="js/options.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "NFSFU234FormValidation Browser Extension",
+  "version": "1.0.0",
+  "description": "This extension is a form validation library designed for developers to test and preview the NFSFU234FormValidation library before implementation. It provides developers with a convenient way to assess the validation process, functionalities, and capabilities of the library without integrating it directly into their codebase.",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo/logoX48.png",
+      "48": "images/logo/logoX48.png",
+      "128": "images/logo/logoX128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "images/logo/logoX48.png",
+    "48": "images/logo/logoX48.png",
+    "128": "images/logo/logoX128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/*", "js/*", "dist/lib/*", "lib/*", "js/custom_script2.js"], 
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"], 
+      "js": ["js/content_script.js" ], 
+      "run_at": "document_end" 
+    }
+  ]
+}

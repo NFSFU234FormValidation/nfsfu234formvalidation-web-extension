@@ -1,0 +1,35 @@
+{
+  "name": "nfsfu234formvalidation-web-extension",
+  "version": "1.0.0",
+  "description": "This extension is a form validation library designed for developers to test and preview the NFSFU234FormValidation library before implementation. It provides developers with a convenient way to assess the validation process, functionalities, and capabilities of the library without integrating it directly into their codebase.",
+  "main": "dist/popup.html",
+  "scripts": {
+    "build:js": "npx webpack --config webpack.config.js",
+    "build:css": "npx webpack --config webpack.config.css.js",
+    "build:html": "npx webpack --config webpack.config.html.js"
+  },
+  "keywords": [
+    "nfsfu234",
+    "extension",
+    "nfsfu234-form-validation"
+  ],
+  "author": "NFORSHIFU234 Dev || Shifu-Nfor Nyuiring-yoh Rhagninyui",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "cssnano": "^6.0.3",
+    "glob": "^10.3.10",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "nfsfu234-form-validation": "^2.4.3"
+  }
+}
