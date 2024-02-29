@@ -1,0 +1,29 @@
+name: Create Zip
+
+on:
+  release:
+    types: [created]
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Create Zip
+      run: |
+        cd dist
+        zip -r nfsfu234formvalidation-web-extension.zip .
+        mv nfsfu234formvalidation-web-extension.zip ../nfsfu234formvalidation-web-extension.zip
+      shell: bash
+      
+    - name: Upload Zip
+      uses: actions/upload-artifact@v2
+      with:
+        name: nfsfu234formvalidation-web-extension
+        path: nfsfu234formvalidation-web-extension.zip
