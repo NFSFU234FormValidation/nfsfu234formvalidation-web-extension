@@ -1,6 +1,6 @@
 # 🧩 NFSFU234FormValidation Browser Extension
 
-![Extension Banner](dist\images\Banner.png)
+![Extension Banner](dist/images/Banner.png)
 
 ## Table of Contents
 - [About](#ℹ️-about)
