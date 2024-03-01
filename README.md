@@ -24,7 +24,7 @@ The NFSFU234FormValidation Browser Extension is an extension for the NFSFU234For
 
 ## 📥 Installation
 As the extension is not yet available in the Chrome Web Store or Firefox extension store, you can download the latest release directly from the GitHub repository.
-1. Go to the [Releases](https://github.com/NFSFU234FormValidation/releases) page.
+1. Go to the [Releases](https://github.com/NFSFU234FormValidation/nfsfu234formvalidation-web-extension/releases) page.
 2. Download the latest version.
 3. Follow the instructions provided in the README file to install the extension manually.
 
